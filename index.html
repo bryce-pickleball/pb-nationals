@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veolia Pickleball National Championships | Cary, NC | Aug 31 – Sep 6, 2026</title>
+<meta name="description" content="The Veolia Pickleball National Championships, a Carvana PPA Tour Slam, comes to Cary Tennis Park in Cary, NC Aug. 31 – Sep. 6, 2026. Pro and amateur competition for all ages and skill levels."/>
+<meta property="og:title" content="Veolia Pickleball National Championships | Aug 31 – Sep 6, 2026"/>
+<meta property="og:description" content="A Carvana PPA Tour Slam at Cary Tennis Park, Cary NC. Pro & amateur pickleball for all ages and skill levels."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.pbnationals.com"/>
+<meta property="og:image" content="https://www.pbnationals.com/images/pb-nationals-main.jpg"/>
+<link rel="canonical" href="https://www.pbnationals.com"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<style>
+  :root {
+    --red: #e30613;
+    --navy: #204970;
+    --surface: #11131c;
+    --surface-low: #191b24;
+    --surface-high: #282933;
+    --surface-highest: #32343e;
+    --text: #e1e1ef;
+    --text-muted: #e1e1ef99;
+    --outline: #5e3f3b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Manrope', sans-serif; background: var(--surface); color: var(--text); }
+  h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+  /* Nav */
+  .nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(17,19,28,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(94,63,59,0.1); }
+  .nav-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+  .nav-logo { height: 40px; width: auto; }
+  .nav-links { display: flex; align-items: center; gap: 2.5rem; }
+  .nav-link { font-family: 'Noto Serif', serif; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text); transition: color 0.3s; }
+  .nav-link:hover { color: var(--red); }
+  .nav-cta { background: var(--red); color: white; font-weight: 800; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.3s; }
+  .nav-cta:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(227,6,19,0.3); }
+
+  /* Hero */
+  .hero { position: relative; min-height: 100vh; display: flex; align-items: flex-end; padding: 0 0 5rem; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; }
+  .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(17,19,28,0.3) 0%, rgba(17,19,28,0.85) 70%, rgba(17,19,28,1) 100%); }
+  .hero-content { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto; padding: 0 2rem; width: 100%; }
+  .hero-badge { display: inline-block; padding: 0.4rem 1rem; background: var(--surface-high); border-left: 3px solid var(--red); border-radius: 20px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(233,188,182,0.9); margin-bottom: 1.5rem; }
+  .hero h1 { font-size: clamp(3rem, 8vw, 7rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+  .hero h1 .red { color: var(--red); }
+  .hero-meta { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.5rem; }
+  .hero-meta h2 { font-size: clamp(1.1rem, 2.5vw, 1.75rem); font-weight: 700; display: flex; align-items: center; gap: 0.75rem; }
+  .hero-meta h2 .material-symbols-outlined { color: var(--red); }
+  .hero-meta h3 { font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 500; color: #a4caf8; display: flex; align-items: center; gap: 0.75rem; }
+  .hero-desc { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; max-width: 700px; }
+  .hero-desc .tagline { font-size: 1.1rem; font-weight: 600; color: rgba(225,225,239,0.8); }
+  .hero-desc .detail { font-size: 0.95rem; color: rgba(225,225,239,0.55); line-height: 1.7; border-left: 2px solid rgba(94,63,59,0.3); padding-left: 1.5rem; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .btn-primary { padding: 1rem 2.5rem; background: var(--red); color: white; font-weight: 900; font-size: 1rem; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.02em; border: none; cursor: pointer; transition: all 0.3s; box-shadow: 0 8px 30px rgba(227,6,19,0.25); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(227,6,19,0.35); }
+  .btn-outline { padding: 1rem 2.5rem; background: transparent; color: var(--text); font-weight: 700; font-size: 1rem; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.02em; border: 2px solid rgba(175,135,130,0.3); cursor: pointer; transition: all 0.3s; backdrop-filter: blur(8px); }
+  .btn-outline:hover { background: var(--surface-high); }
+
+  /* Info Strip */
+  .info-strip { background: var(--surface-low); border-top: 1px solid rgba(94,63,59,0.1); padding: 3rem 2rem; }
+  .info-strip-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .info-partners { display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+  .info-partners img { height: 32px; opacity: 0.7; filter: brightness(2) grayscale(1); transition: all 0.3s; }
+  .info-partners img:hover { opacity: 1; filter: none; }
+  .host-city { display: flex; flex-direction: column; }
+  .host-city span:first-child { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(225,225,239,0.4); }
+  .host-city span:last-child { font-size: 1.1rem; font-weight: 900; letter-spacing: -0.02em; }
+  .social-icons { display: flex; gap: 1rem; }
+  .social-icon { width: 48px; height: 48px; border-radius: 50%; background: var(--surface-highest); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: color 0.3s; }
+  .social-icon:hover { color: var(--red); }
+
+  /* About Section */
+  .about { padding: 6rem 2rem; background: var(--surface); }
+  .about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .about-text .eyebrow { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .about-text h2 { font-size: 2.5rem; font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .about-text p { color: rgba(225,225,239,0.6); line-height: 1.8; margin-bottom: 1.25rem; font-size: 0.95rem; }
+  .about-image { border-radius: 12px; overflow: hidden; position: relative; }
+  .about-image img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; }
+
+  /* Highlights Grid */
+  .highlights { padding: 6rem 2rem; background: var(--surface-low); }
+  .highlights-inner { max-width: 1200px; margin: 0 auto; }
+  .highlights-header { text-align: center; margin-bottom: 4rem; }
+  .highlights-header .eyebrow { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .highlights-header h2 { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.02em; }
+  .highlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .highlight-card { background: var(--surface-high); border-radius: 12px; padding: 2.5rem; transition: all 0.3s; position: relative; overflow: hidden; }
+  .highlight-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--red); transition: height 0.4s; }
+  .highlight-card:hover::before { height: 100%; }
+  .highlight-card:hover { background: var(--surface-highest); transform: translateY(-4px); }
+  .highlight-card .material-symbols-outlined { font-size: 2rem; color: var(--red); margin-bottom: 1rem; }
+  .highlight-card h3 { font-size: 1.25rem; font-weight: 900; margin-bottom: 0.75rem; }
+  .highlight-card p { color: rgba(225,225,239,0.5); font-size: 0.9rem; line-height: 1.6; }
+
+  /* Photo Gallery */
+  .gallery { padding: 6rem 2rem; background: var(--surface); }
+  .gallery-inner { max-width: 1400px; margin: 0 auto; }
+  .gallery-header { text-align: center; margin-bottom: 3rem; }
+  .gallery-header .eyebrow { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .gallery-header h2 { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.02em; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+  .gallery-grid img { width: 100%; height: 280px; object-fit: cover; border-radius: 4px; filter: grayscale(0.3); transition: all 0.4s; cursor: pointer; }
+  .gallery-grid img:hover { filter: grayscale(0); transform: scale(1.02); }
+
+  /* CTA Section */
+  .cta-section { padding: 6rem 2rem; background: linear-gradient(135deg, var(--red) 0%, #a30410 100%); text-align: center; }
+  .cta-section h2 { font-size: 3rem; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 1rem; color: white; }
+  .cta-section p { font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .btn-white { padding: 1rem 2.5rem; background: white; color: var(--red); font-weight: 900; font-size: 1rem; border-radius: 8px; text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s; }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.2); }
+
+  /* Footer */
+  .footer { background: var(--surface); border-top: 1px solid rgba(94,63,59,0.1); padding: 3rem 2rem; }
+  .footer-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-logo { height: 32px; }
+  .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .footer-link { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(225,225,239,0.4); transition: color 0.3s; }
+  .footer-link:hover { color: var(--red); }
+  .footer-copy { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(225,225,239,0.25); }
+
+  /* Mobile Nav Toggle */
+  .nav-toggle { display: none; background: none; border: none; color: var(--text); cursor: pointer; font-size: 1.5rem; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .hero h1 { font-size: 3rem; }
+    .about-inner { grid-template-columns: 1fr; }
+    .highlights-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .info-strip-inner { flex-direction: column; text-align: center; }
+    .footer-inner { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/"><img src="/logos/logo-white.png" alt="Pickleball National Championships" class="nav-logo"></a>
+    <div class="nav-links">
+      <a href="#" class="nav-link">Tournament</a>
+      <a href="#" class="nav-link">Brackets</a>
+      <a href="#" class="nav-link">Athletes</a>
+      <a href="#" class="nav-cta">Register Now</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="/images/pb-nationals-main.jpg" alt="Pickleball National Championships at Cary Tennis Park under stadium lights">
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">A Carvana PPA Tour Slam</div>
+    <h1>Veolia<br><span class="red">Pickleball National</span><br>Championships</h1>
+    <div class="hero-meta">
+      <h2><span class="material-symbols-outlined">calendar_today</span> August 31 – September 6, 2026</h2>
+      <h3><span class="material-symbols-outlined">location_on</span> Cary Tennis Park | Cary, NC</h3>
+    </div>
+    <div class="hero-desc">
+      <p class="tagline">Pro & Amateur Competition | All Ages & Skill Levels</p>
+      <p class="detail">The world's best professional players and amateur competitors of every age and skill level come together for a weeklong celebration of America's fastest-growing sport. Live music, pro-led clinics, incredible food, and non-stop entertainment.</p>
+    </div>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Register to Play</a>
+      <a href="#" class="btn-outline">Buy Tickets</a>
+      <a href="#" class="btn-outline">Follow the PPA Tour</a>
+    </div>
+  </div>
+</section>
+
+<!-- Info Strip -->
+<section class="info-strip">
+  <div class="info-strip-inner">
+    <div class="info-partners">
+      <img src="/logos/logo-color.png" alt="Pickleball National Championships" style="height: 40px; filter: none; opacity: 1;">
+      <div class="host-city">
+        <span>Host City</span>
+        <span>Town of Cary</span>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><span class="material-symbols-outlined">share</span></a>
+      <a href="#" class="social-icon"><span class="material-symbols-outlined">public</span></a>
+      <a href="#" class="social-icon"><span class="material-symbols-outlined">videocam</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <div class="eyebrow">About the Championship</div>
+      <h2>The Biggest Week in Pickleball</h2>
+      <p>The Carvana PPA Tour is thrilled to bring the inaugural Veolia Pickleball National Championships to Cary, North Carolina. This PPA Tour Slam offers the largest prize money and ranking points in professional pickleball, featuring the very best athletes in the sport.</p>
+      <p>Expect world No. 1's Anna Leigh Waters, Ben Johns, Gabe Tardio, and Chris Haworth alongside North Carolina residents Kate Fahey, Brooke Buckner, and more top-ranked professionals competing for titles and crucial world ranking points.</p>
+      <p>New for 2026: live music concerts, sponsor activations, renowned food and fare, pro-led pickleball camps and clinics, plus much more for the entire family.</p>
+      <a href="#" class="btn-primary" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+    </div>
+    <div class="about-image">
+      <img src="/images/action-1.jpg" alt="Professional pickleball action at PPA Tour championship">
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section class="highlights">
+  <div class="highlights-inner">
+    <div class="highlights-header">
+      <div class="eyebrow">What to Expect</div>
+      <h2>Championship Experience</h2>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">emoji_events</span>
+        <h3>Pro Competition</h3>
+        <p>Watch the world's top-ranked players battle for the biggest prize purse and ranking points in professional pickleball.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">groups</span>
+        <h3>Amateur Brackets</h3>
+        <p>Play where the pros play. Compete for medals and bragging rights in divisions for every age group and skill level.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">music_note</span>
+        <h3>Live Entertainment</h3>
+        <p>Live music concerts, incredible food, fan activations, and non-stop entertainment throughout the entire week.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">school</span>
+        <h3>Pro-Led Clinics</h3>
+        <p>Learn from the best with exclusive pro-led camps and clinics designed for players of all skill levels.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">eco</span>
+        <h3>Sustainability</h3>
+        <p>Powered by Veolia's commitment to making pickleball the most sustainable sport, with water refill stations and ball recycling.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="material-symbols-outlined">family_restroom</span>
+        <h3>Family Friendly</h3>
+        <p>Something for everyone — bring the whole family for a week of world-class sport, food, music, and unforgettable memories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="gallery">
+  <div class="gallery-inner">
+    <div class="gallery-header">
+      <div class="eyebrow">From the Courts</div>
+      <h2>Championship Moments</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="/images/action-1.jpg" alt="Championship pickleball action" loading="lazy">
+      <img src="/images/crowd-1.jpg" alt="Excited crowd at PPA Tour event" loading="lazy">
+      <img src="/images/aerial-1.jpg" alt="Aerial view of pickleball courts" loading="lazy">
+      <img src="/images/athlete-1.jpg" alt="Pro pickleball athlete competing" loading="lazy">
+      <img src="/images/action-2.jpg" alt="Doubles pickleball match" loading="lazy">
+      <img src="/images/crowd-2.jpg" alt="Fans enjoying the tournament" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <h2>Don't Miss the Action</h2>
+  <p>Register to compete or grab your tickets now. The 2026 Veolia Pickleball National Championships promises to be the biggest week in pickleball.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="#" class="btn-white">Register to Play</a>
+    <a href="#" class="btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">Buy Tickets</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="/logos/logo-white.png" alt="Pickleball National Championships" class="footer-logo">
+    <div class="footer-links">
+      <a href="#" class="footer-link">Sponsorships</a>
+      <a href="#" class="footer-link">Media Kit</a>
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Terms of Service</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Pickleball National Championships. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
